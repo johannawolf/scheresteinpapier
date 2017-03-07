@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang=de>
+	<head>
+		<meta charset="UTF-8">
+		<link href="design.css" type="text/css" rel="stylesheet">
+		<title>Labyrinth</title>
+	</head>
+	<body bgcolor=#cccccc>
+		 <header>
+ 		</header>
+ 		<main>
+<!-- SOUNDS START -->
+			<audio id="loop" autoplay=""  loop="" preload="">
+			 <source src="sound/loop.wav" type="audio/wav"></source>
+			 Your browser does not support the audio element.
+			</audio>
+
+			<audio id="move" preload="">
+			 <source src="sound/move.wav" type="audio/wav"></source>
+			 Your browser does not support the audio element.
+			</audio>
+
+			<audio id="door" preload="">
+			 <source src="sound/door.wav" type="audio/wav"></source>
+			 Your browser does not support the audio element.
+			</audio>
+
+
+
+<!-- SOUNDS END -->
+
+ 			<table class="tabelle">
+ 	 		<tr>
+ 			<td width='800px' height='600px' valign=top >
+ 				<article id='game_object' style=''>
+				<canvas width='800px' height='600px' id='background_canvas' style='background:#008080;'></canvas>
+				<canvas width='800px' height='600px' id='main_canvas' style='position:absolute;top:0px; left:0px;' onmousemove='mouse(event)'>Leider kann dieser Browser das Spiel nicht ausführen!</canvas>
+				</article>
+ 			</td>
+ 			<td>
+ 			<tr></tr>
+ 			<tr></tr>
+ 			<tr></tr>
+ 			</td>
+ 			<td>
+ 				<table>
+					<tr>
+					<tr> </br> </br> </br> </br>
+					</tr>
+						<td></td> <td><input type="button" value="oben" class="move" onclick='oben();'></td> <td></td>
+
+					</tr>
+					<tr>
+					<td><input type="button" value="links" class="move" onclick='links1()'> </td>
+					<td><input type="button" value="enter" class="move" id="enter" onclick='enter()'> </td>
+					<td><input type="button" value="rechts" class="move" onclick='rechts()'> </td>
+					</tr>
+					<tr>
+						<td></td><td><input type="button" value="unten" class="move" onclick='unten()'></td><td></td>
+					</tr>
+				</table>
+			</td>
+ 			</tr>
+ 			</table>
+ 			<input type="button"  value="Zurücksetzen" class="ctrl" onclick='reset()'>
+			<input type="button" value="for Admin" class="ctrl" onclick='win()'>
+				<a href="../start.html">
+					<input type="button" value="Logout" class="ctrl">
+				</a>
+			<script src='resizeGame.js'></script>
+			<script src='labyrinth.js'></script>
+		</main>
+	</body>
+</html>

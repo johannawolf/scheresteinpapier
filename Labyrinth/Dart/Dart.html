@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Dart</title>
+
+		<meta charset=utf-8>
+		<link href="../design.css" type="text/css" rel="stylesheet">
+	</head>
+	<body>
+		<header>
+		</header>
+		<main>
+
+			<!-- SOUNDS START -->
+						<audio id="win" preload="">
+						 <source src="../sound/win.wav" type="audio/wav"></source>
+						 Your browser does not support the audio element.
+						</audio>
+
+						<audio id="lose" preload="">
+						 <source src="../sound/lose.wav" type="audio/wav"></source>
+						 Your browser does not support the audio element.
+						</audio>
+
+
+			<!-- SOUNDS END -->
+
+			<input type="button" class="submit" value="Zurücksetzen" onclick='restart()'>
+	  		<input type="button" class="submit" value="Zurück zum Labyrinth" onclick='backToTheMaze()'>
+
+			<article id='game_object'>
+				<canvas width='800px' height='600px' id='background_canvas' style='background:gray; position:absolute; top:0px; left:0px;'></canvas>
+				<canvas width='800px' height='600px' id='main_canvas' style=' position:absolute; top:0px; left:0px;' >Leider kann dieser Browser das Spiel nicht ausführen!</canvas>
+			</article>
+			<script src='../resizeGame.js'></script>
+			<script src='dart.js'></script>
+		</main>
+	</body>
+</html>

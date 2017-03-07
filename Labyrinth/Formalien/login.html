@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link href="../design.css" type="text/css" rel="stylesheet">
+		<title>Labyrinth_login</title>
+	</head>
+	<body>
+		<header>
+			<img src="../bilder/labyrinth2.png" width="104" height="90" alt="Banner">
+		<header/>
+		<main>
+			<h1>Labyrinth</h1>
+			<h2>Login</h2>
+ 			<form class="erste_spalte_login">
+ 				<label for="username">Username: <br/>
+ 					<input type="text" id="username" name="username">
+ 				</label> <br/><br/>
+ 				<label for="pw">Passwort:<br/>
+ 					<input id="pw" name="pw">
+ 				</label>  <br/><br/>
+ 				<input type="button" class="submit" onClick='einloggen()' value="Login" >
+ 				<script src='login.js'></script>
+ 		 	</form>
+ 		 	<form class="zweite_spalte_login">
+				<p>Noch nicht angemeldet? </p> 
+				<a href="registrieren.html">
+					<input type="button" value="Registrier dich hier!" class="submit">
+				</a>
+			</form>
+		</main>
+	</body>
+</html>

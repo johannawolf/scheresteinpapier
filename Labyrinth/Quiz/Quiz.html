@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Quiz</title>
+		<meta charset=utf-8>
+		<link href="../design.css" type="text/css" rel="stylesheet">
+	</head>
+	<body>
+		<header>
+		</header>
+		<main>
+	  		<input type="button" value="Zurücksetzen" class="submit" onclick='restart()'>
+	  		<input type="button" value="Zurück zum Labyrinth" class="submit" onclick='backToTheMaze()'>
+	  
+	  		<article id='game_object'>
+				<canvas width='800px' height='600px' id='background_canvas' style='background:white; position:absolute; top:0px; left:0px;'></canvas>
+				<canvas width='800px' height='600px' id='main_canvas' style=' position:absolute; top:0px; left:0px;' onmousemove='mouse(event)'>Leider kann dieser Browser das Spiel nicht ausführen!</canvas>
+			</article>
+			<script src='../resizeGame.js'></script>
+			<script src='quiz.js'></script>
+		</main>
+	</body>
+</html>

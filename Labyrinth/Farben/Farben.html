@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Farbspiel</title>
+		<meta charset=utf-8>
+		<link href="../design.css" type="text/css" rel="stylesheet">
+	</head>
+	<body>
+		<header>
+		</header>
+		<main>
+
+			<audio id="win" preload="">
+			 <source src="../sound/win.wav" type="audio/wav"></source>
+			 Your browser does not support the audio element.
+			</audio>
+
+			<audio id="lose" preload="">
+			 <source src="../sound/lose.wav" type="audio/wav"></source>
+			 Your browser does not support the audio element.
+			</audio>
+
+			
+	 		<input type="button" class="submit" value="Zurücksetzen" onclick='restart()'>
+	  		<input type="button" class="submit" value="Zurück zum Labyrinth" onclick='backToTheMaze()'>
+	  		<br/>
+	  		<input type="button" class="submit" value="Blau" onclick='blau()' style="background-color:blue">
+	  		<input type="button" class="submit" value="Rot" onclick='rot()' style="background-color:red">
+	  		<input type="button" class="submit" value="Gelb" onclick='gelb()' style="background-color:yellow">
+	  		<input type="button" class="submit" value="Grün" onclick='gruen()' style="background-color:lightgreen">
+	  		<input type="button" class="submit" value="Orange" onclick='orange()' style="background-color:orange">
+	  		<input type="button" class="submit" value="Hellblau" onclick='hellblau()'style="background-color:lightblue">
+	  		<br/>
+			<article id='game_object'>
+				<canvas width='400px' height='340px' id='background_canvas' style='background:gray; position:absolute; top:0px; left:0px;'></canvas>
+				<canvas width='400px' height='340px' id='main_canvas' style=' position:absolute; top:0px; left:0px;' >Leider kann dieser Browser das Spiel nicht ausführen!</canvas>
+			</article>
+
+			<script src='../resizeGame.js'></script>
+			<script src='farben.js'></script>
+		</main>
+	</body>
+</html>

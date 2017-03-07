@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Puzzle</title>
+		<meta charset=utf-8>
+		<link href="../design.css" type="text/css" rel="stylesheet">
+	</head>
+	<body>
+		<header>
+		</header>
+		<main>
+			<audio id="win" preload="">
+			 <source src="../sound/win.wav" type="audio/wav"></source>
+			 Your browser does not support the audio element.
+			</audio>
+
+			<audio id="lose" preload="">
+			 <source src="../sound/lose.wav" type="audio/wav"></source>
+			 Your browser does not support the audio element.
+			</audio>
+			
+	  		<input type="button" class="submit" value="Zurücksetzen" onclick='restart()'>
+	  		<input type="button" class="submit" value="Shuffle" onclick='shuffle()'>
+	  		<input type="button" class="submit" value="Zurück zum Labyrinth" onclick='backToTheMaze()'>
+
+			<article id='game_object'>
+				<canvas width='800px' height='600px' id='background_canvas' style='background:gray; position:absolute; top:0px; left:0px;'></canvas>
+				<canvas width='800px' height='600px' id='main_canvas' style=' position:absolute; top:0px; left:0px;' onmousemove='mouse(event)'>Leider kann dieser Browser das Spiel nicht ausführen!</canvas>
+			</article>
+			<script src='../resizeGame.js'></script>
+			<script src='puzzle.js'></script>
+		</main>
+	</body>
+</html>

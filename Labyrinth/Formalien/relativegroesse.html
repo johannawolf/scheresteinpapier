@@ -1,0 +1,33 @@
+#game_object
+	{
+		top:8%;
+		width:90%;
+		height:90%;
+		position:absolute;
+		left:3%;
+		right:3%;
+	}
+	#background_canvas,#main_canvas
+	{
+		position:absolute;
+		width:100%;
+		height:100%;
+	}
+	
+
+</style>
+<title>Labyrinth</title>
+
+</head>
+
+
+<body bgcolor=#dcdcdc>
+	
+ 	<table>
+ 	<tr> 
+ 		<td width='800px' height='600px' valign=top > 
+		<p> Labyrinth </p>
+ 			<div id='game_object' style=''>
+				<canvas width='800px' height='600px' id='background_canvas' style='background:#6495ed;'></canvas>
+				<canvas width='800px' height='600px' id='main_canvas' style='position:absolute;top:0px; left:0px;' onmousemove='mouse(event)'>Leider kann dieser Browser das Spiel nicht ausführen!</canvas>
+			</div>

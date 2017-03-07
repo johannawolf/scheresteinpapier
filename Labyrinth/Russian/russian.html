@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang=de>
+	<head>
+		<meta charset=UTF-8>
+		<link href="../design.css" type="text/css" rel="stylesheet">
+		<title>Russian Roulette</title>
+	</head>
+	<body>
+		<header>
+		<header/>
+		<main>
+			<audio id="gun" preload="">
+			 <source src="../sound/gun.wav" type="audio/wav"></source>
+			 Your browser does not support the audio element.
+			</audio>
+
+			<h1>Russian Roulette</h1>
+      <input type="button" value="Zurück zum Labyrinth" class="submit" onclick='backToTheMaze()'>
+    </br>
+      <img border="0" src="bilder/miss-fury-gun.png" width="568" height="523">
+      <canvas width='800px' height='600px' id='main_canvas' style=' position:absolute; top:0px; left:0px;' onmousemove='mouse(event)'>Leider kann dieser Browser das Spiel nicht ausführen!</canvas>
+
+      <p>
+      <input name="message" type="button" value="Schießen" onClick="feuern()">
+      </p>
+      <script src='../resizeGame.js'></script>
+      <script src='russian.js'></script>
+
+      </script>
+		</main>
+	</body>
+</html>
